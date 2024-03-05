@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+<body>
+    <!-- input 标签 type 属性值不同，则功能不同。 占位文本：提示信息，文本框和密码框都可以使用 -->
+    文本框：<input type="text" placeholder="文本信息"><br>
+    密码框：<input type="password" placeholder="输入密码"><br>
+    单选框：<input type="radio"><br>
+    多选款：<input type="checkbox"><br>
+    上传文件：<input type="file"><br>
+    <!-- name控件分组，同组只能选中一个  checked默认选中 -->
+    单选框：<input type="radio" name="gender" checked>男
+    <input type="radio" name="gender">女
+    <br>
+    <!-- 默认情况下，文件上传表单控件只能上传一个文件，添加 multiple 属性可以实现文件多选功能。 -->
+    上传文件：<input type="file" multiple>
+    <br>
+    <!-- 多选框也叫复选框，默认选中：checked -->
+    <input type="checkbox" checked>同意
+    <br>
+    <!-- 用 label 标签绑定文字和表单控件的关系，增大表单控件的点击范围(点击文字即可)。 -->
+    <!-- 支持 label 标签增大点击范围的表单控件：文本框、密码框、上传文件、单选框、多选框、下拉菜单、文本域等等 -->
+    <!-- 写法一：使用 label 标签包裹文字和表单控件，不需要属性  -->
+    <label>内容：<input type="text" placeholder="输入内容"></label>
+    <br>
+    <!-- 写法二：label 标签只包裹内容，不包裹表单控件 设置 label 标签的 for 属性值 和表单控件的 id 属性值相同 -->
+    <input type="radio" id="man">
+    <label for="man">男</label>
+    <br>
+    <!-- form 表单区域 -->
+    <!-- action="" 发送数据的地址 -->
+    <!-- button按钮 按钮需配合 form 标签（表单区域）才能实现对应的功能。 -->
+    <form action="">
+        用户名：<input type="text"><br>
+        密码：<input type="password"><br>
+        <!-- 如果省略 type 属性，功能是 提交（提交数据到后台） -->
+        <button type="submit">提交</button>
+        <button type="reset">重置</button>
+        <button type="button">普通按钮</button>
+        <br>
+        <!-- textarea多行输入文本的表单控件 -->
+        <textarea name="inform" id="" cols="30" rows="10"></textarea>
+        <span>span标签不换行</span>
+        <div>div标签独占一行</div>
+        <!-- &nbsp空格 &lt小于号 &gt大于号 -->
+        &lt;&nbsp;&nbsp;&nbsp;&gt;
+        <br>
+        <!-- select 嵌套 option，select 是下拉菜单整体，option是下拉菜单的每一项，selected 属性实现默认选中功能 -->
+        <select name="" id="">
+            <option>北京</option>
+            <option>上海</option>
+            <option>广州</option>
+            <option>深圳</option>
+            <option selected>武汉</option>
+        </select>
+    </form>
+</body>
+</html>
