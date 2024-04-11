@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .news{
+            margin: 100px auto;
+            width: 360px;
+            height: 200px;
+        }
+        .news .hd{
+            height: 34px;
+            background-color: #eee;
+            border: 1px solid #dbdee1;
+            border-left:0;
+        }
+        .news .hd a{
+            margin: -1px;
+            display: block;
+            border-top: 3px solid orange;
+            width: 48px;
+            height: 34px;background-color: #fff;
+            text-align: center;
+            line-height: 32px;
+            font-size: 14px;
+            color: #333;
+        }
+        .news .bd{
+            padding:5px;
+        }
+        .news .bd li{
+            padding-left: 15px;
+            background-image: url(./images/img.gif);
+            background-repeat: no-repeat;
+            background-position: 0 center;
+        }
+        a:hover{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="news">
+        <div class="hd">
+            <a href="#">新乡</a>
+        </div>
+        <div class="bd">
+            <ul>
+                <li><a href="https://www.xxgc.edu.cn/" target="_blank">新乡工程学院</a></li>
+                <li><a href="https://www.xxu.edu.cn/" target="_blank">新乡学院</a></li>
+                <li><a href="https://www.hist.edu.cn/" target="_blank">河南科技学院</a></li>
+                <li><a href="https://www.htu.edu.cn/" target="_blank">河南师范大学</a></li>
+                <li><a href="https://www.hait.edu.cn/" target="_blank">河南工学院</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
